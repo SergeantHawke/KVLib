@@ -34,9 +34,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sprache">
-      <HintPath>..\..\Sprache\src\Sprache\bin\Debug\Sprache.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +46,12 @@
     <Compile Include="KeyValue.cs" />
     <Compile Include="KVParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sprache\src\Sprache\Sprache.csproj">
+      <Project>{df5fe6f0-5abe-4363-9184-eb6ef64f0f61}</Project>
+      <Name>Sprache</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
